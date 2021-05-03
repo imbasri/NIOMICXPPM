@@ -1,0 +1,15 @@
+/* card title 1 */
+
+.card a {
+    background-color: #4d1b9e;
+}
+
+.card-body p {
+    font-size: 14px;
+}
+
+.copyright p {
+    background-color: rgba(0, 0, 0, 0.289);
+    margin-top: 25px;
+    padding: 15px 40px;
+}
