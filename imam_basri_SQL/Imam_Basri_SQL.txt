@@ -1,0 +1,17 @@
+Jawaban 
+
+aktifkan localhost phpmyadmin import data SQL
+
+1.buat database sesuai soal : CREATE DATABASE imam_basri;
+2.diklik tab kiri sesuai table yang ingin dibuka dan diimport dari soal.
+3.ubah nama tabel dari provinces jadi provinsi masuk ke menu SQL dan gunakan code ini : RENAME TABLE `imam_basri`.`provinces` TO `imam_basri`.`provinsi`;
+4.ubah nama tabel dari regencies jadi kabupaten_kota masuk ke menu SQL dan gunakan code ini : RENAME TABLE `imam_basri`.`regencies` TO `imam_basri`.`kabupaten_kota`;
+5.ubah nama tabel dari districts jadi kecamatan masuk ke menu SQL dan gunakan code ini : RENAME TABLE `imam_basri`.`districts` TO `imam_basri`.`kecamatan`;
+6.ubah nama tabel dari villages jadi desa masuk ke menu SQL dan gunakan code ini : RENAME TABLE `imam_basri`.`villages` TO `imam_basri`.`desa`;
+ ubah semua nama coloum_id dengan nama tabel_id sesuai dengan datatype ya. contoh 1 dan seterus ya diubah ALTER TABLE kabupaten_kota   CHANGE   province_id  provinsi_id char(2);
+7. seleksi tabel id_desa, desa dan provinsi
+SELECT id_desa,desa,provinsi FROM `desa`,`provinsi` WHERE id_desa="1101010" AND provinsi="ACEH"
+8.seleksi data id_kecamatan,kecamatan,provinsi
+SELECT kecamatan_id,name,provinsi FROM `kecamatan`,`provinsi` WHERE kecamatan_id="1101" AND kecamatan="TEUPAH SELATAN" AND provinsi="ACEH"
+9.seleksi data id_kabupaten_kota , kabupaten_kota , provinsi
+SELECT id_kabupaten_kota,kabupaten_kota,provinsi FROM `kabupaten_kota`,`provinsi` WHERE id_kabupaten_kota="1101" AND kabupaten_kota="KABUPATEN SIMEULUE" AND provinsi="ACEH"
